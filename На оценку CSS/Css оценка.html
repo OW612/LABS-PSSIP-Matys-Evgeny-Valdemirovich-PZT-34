@@ -1,0 +1,35 @@
+<html>
+    <title>Матыс Евгений</title>
+    <link rel="stylesheet" type="text/css" href="dstyle.css">
+    <style>
+        @import url("mystyle.css");
+
+        .sd{
+            color: red;
+        }
+        .cv{
+            color: white;
+        }
+
+        H3{
+            text-decoration: line-through;
+            color: green;
+            text-align: left;
+        }
+    </style>
+    <body><!-- К Body применена импортированная таблица стилей -->
+        <p>Матыс Евгений Вальдемирович</p>
+        <h3>13 сентября 2004г.</h3>
+        <p>Любимые магазины:</p>
+        <ul class="sd"><!-- Класс sd используется для заливки маркера-кружка -->
+            <li><span class="cv">AliExpress</span></li><!-- Класс cv используется для цвета текста -->
+            <li><span class="cv">Wildberries</span></li>
+            <li><span class="cv">OZON</span></li>
+            <li><span class="cv">5 элемент</span></li>
+        </ul>
+        <p>Ссылка на сайт:
+            <a href="https://tut.by" target="_blank">tut.by</a><!-- К ссылке применен псевдокласс -->
+        </p>
+        <p>Каскадность таблиц стилей появляется в списке и дате рождения, т.к. через импортированную таблицу стилей задается цвет текста, но он перекрывается другим стилем</p>
+    </body>
+</html>

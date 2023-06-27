@@ -1,0 +1,10 @@
+.container{
+    height: 1200px;
+    width: 1300px;
+}
+
+.header{
+    color:green;
+    width: 1200px;
+    height: 50px;
+}

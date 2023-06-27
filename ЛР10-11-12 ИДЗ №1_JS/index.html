@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <script>
+            function ADate(){
+                let date = new Date();
+                // Получаем день, месяц и год в виде чисел
+                let day = date.getDate();
+                alert(day + " день месяца");
+            }
+        </script>
+    </head>
+    <body>
+        <button onclick="ADate()">Показать день</button>
+        <br><br>
+        <script>
+            let surname = "Матыс Евгений";
+            let output = "";
+            for (let i = 0; i < 35; i++) {
+            output += i+1+")" + surname + ";<br>";
+            }
+            document.write(output);
+        </script>
+        <br><br>
+        <script>
+            // Сформировать массив из 6 целых чисел
+            let array = [1, 2, 3, 4, 5, 6];
+            let utput = "";
+            let sum = 0;
+
+            utput = "[ "
+            for(let i = 0; i < array.length; i++){
+                utput += array[i] + "\n";
+            }
+            utput += "]; Сумма четных элементов = ";
+            for (let i = 0; i < array.length; i++) {
+                if (array[i] % 2 == 0) {
+                    sum += array[i];
+                }
+            }
+            utput += sum;
+            document.write(utput);
+        </script>
+
+        <p>a = <input id="a"></p>
+        <p>b = <input id="b"></p>
+        <p>c = <input id="c"></p>
+        <p><button onclick="formula()">Расчет по формуле</button></p>
+        <br><br>
+        <p id="surname"></p>
+        <p id="hobbie"></p>
+
+        <script>
+            let S1 = "Матыс";
+            let S2 = "Спорт, киберспорт";
+
+            var p1 = document.getElementById("surname"); // находим элемент по id
+            p1.innerHTML = S1;
+
+            var p2 = document.getElementById("hobbie"); // находим элемент по id
+            p2.innerHTML = S2;
+
+            document.write("Длина строки S2 = " + S2.length + "<br><br>");
+            
+            setTimeout(() => (p2.innerHTML = S2.replaceAll(" ", "_______________")), 10000);
+            S1 = "Иванов";
+            setTimeout(() => (p1.innerHTML = S1), 10000);
+        </script>
+    </body>
+    <script src="javascript.js"></script>
+</html>

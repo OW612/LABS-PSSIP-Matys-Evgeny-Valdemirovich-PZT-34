@@ -1,0 +1,23 @@
+BODY{
+font-family: 'Courier New', Courier, monospace;
+color:rgb(13, 0, 255);
+background-color: #efff5d;
+}
+
+B{
+    color:rgb(255, 190, 48);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.5em;
+}
+
+TD{
+    border: 1px solid red;
+}
+
+TR{
+    border: 2px solid green;
+}
+
+UL{
+    list-style-type: square;
+}

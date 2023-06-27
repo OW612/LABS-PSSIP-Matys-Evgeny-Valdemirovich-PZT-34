@@ -1,0 +1,31 @@
+<html>
+    <style>
+        .stl{
+            background-color: yellow;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 14;
+            color: green;
+        }
+        .IMGstl{
+            border: 1px solid red;
+        }
+    </style>
+    <script src="script.js"></script>
+    <body id="ds">
+        <p>Матыс Евгений Вальдемирович</p>
+        <p><img src="nophoto.jpeg" style="width: 200px; height: 200px;" id="img"></p><br><br>
+        <button id="btn">Стили</button><br><br>
+        <button onclick="cookie1()">Включены ли cookie</button>
+        
+        
+        <script>
+            setTimeout(() => alert(document.readyState), 5000);
+            setTimeout(() => alert(window.close()), 20000);
+
+            const text = document.createTextNode("Гродно");
+            const container = document.getElementById("ds");
+            const Child3 = container.children[3];
+            container.insertBefore(text, Child3);
+        </script>
+    </body>
+</html>

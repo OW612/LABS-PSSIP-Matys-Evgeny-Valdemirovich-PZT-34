@@ -1,0 +1,111 @@
+<html>
+    <style>    
+    @media (min-width: 800px) {
+        .container{
+            margin-left: auto;
+            margin-right: auto;
+            background-color: grey;
+            width: 100%;
+            height: 100%;
+            display: grid;
+            grid-template-rows:  11% 33% 45% 11%;
+            grid-template-columns: 22% 56% 22%;
+            grid-template-areas: "header header header"  
+                          "block1 block2 block3"
+                          "block4 block2 block3"
+                          "block5 footer footer"
+        }
+    }
+
+    @media (min-width: 481px) and (max-width: 799px) {
+        .container{
+            margin-left: auto;
+            margin-right: auto;
+            background-color: grey;
+            width: 100%;
+            height: 150%;
+            display: grid;
+            grid-template-rows:  7% 28% 37% 20% 8%;
+            grid-template-columns: 67% 33%;
+            grid-template-areas: "header header"  
+                          "block2 block3"
+                          "block2 block3"
+                          "block1 block4"
+                          "footer footer"
+        }
+    }
+
+    @media (min-width: 320px) and (max-width: 480px) {
+        .container{
+            margin-left: auto;
+            margin-right: auto;
+            background-color: grey;
+            width: 100%;
+            height: 180%;
+            display: grid;
+            grid-template-rows: 7% 28% 28% 10% 10% 10%;
+            grid-template-columns: 100%;
+            grid-template-areas: "header" 
+                            "block1"
+                            "block2"
+                            "block3"
+                            "block4"
+                            "block5"
+                            "footer"
+        }
+    }
+
+    .container{
+        margin-left: auto;
+        margin-right: auto;
+        background-color: grey;
+    }
+
+    .header{
+        grid-area: header;
+        background-color:green;
+    }
+
+    .block1{
+        grid-area: block1;
+        background-color:red;
+    }
+
+    .block2{
+        grid-area: block2;
+        background-color: yellow;
+    }
+
+    .block3{
+        grid-area: block3;
+        background-color: brown;
+    }
+
+    .block4{
+        grid-area: block4;
+        background-color: purple;
+    }
+
+    .block5{
+        grid-area: block5;
+        background-color: orchid;
+    }
+
+    .footer{
+        grid-area: footer;
+        background-color: orangered;
+    }
+    </style>
+    <body>
+        <div class="container">
+            <div class="header"></div>
+            <div class="block1"></div>
+            <div class="block2"></div>
+
+            <div class="block3"></div>
+            <div class="block4"></div>
+            <div class="block5"></div>
+            <div class="footer"></div>
+        </div>
+    </body>
+</html>

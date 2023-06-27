@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <style>
+        .container1{
+            margin-left: auto;
+            margin-right: auto;
+            background-color: rgb(168, 232, 251);
+            padding: 10px 10px 10px 10px;
+            width: 95%;
+            height: 92%;
+            
+            display: grid;
+            grid-template-rows: auto;
+            grid-template-columns: 100%;
+            grid-template-areas: "blockg"
+                                "blockg"
+                                "blockg"
+                                "blockg"
+                                "blockg"
+                                "blockg"
+                                "blockg"
+                                "blockg"
+                                "blockg"
+                                "blockg"
+    }
+
+        .blockg{
+            grid-area: blockg;
+        }
+        
+        .vf{
+            width:50%; 
+            height: 4%; 
+            border: 1px solid rgb(167, 167, 167); 
+            float: right;
+        }
+    </style>
+    <title>Пользовательская форма</title>
+    <body>
+        <div style="width: 50%; height: 95%; margin-left: auto; margin-right: auto; background-color: rgb(168, 238, 251); padding: 5px 5px 5px 5px; border: 1px solid rgb(24, 163, 201);;">
+            <font style="color: blue; font-size: 10px; font-family: Arial; margin-left: 10px;"><b>Форма заказа товара</b></font>
+            <button type="button" style="background-color: rgb(24, 163, 201); border-radius: 1px; border: 1px solid grey; float: right; margin-right: 1%;"><span style="font-size: 10px;">x</span></button><br>
+            <div class="container1" style="border: 1px solid rgb(24, 163, 201);">
+                <form style="color: rgb(0, 0, 0); font-size: 9px; font-family: Arial;">
+                    <div class="blockg">ФИО <span style="color: red; font-size: 10px;">*</span>:<input class="vf" type = "text" name = "firstname"></div><br><br>
+                    <div class="blockg">E-mail отправителя <span style="color: red; font-size: 10px;">*</span>: <input class="vf" type = "text" name = "lastname"></div><br><br>
+                    <div class="blockg">Мобильный телефон <span style="color: red; font-size: 10px;">*</span>: <input class="vf" type = "text" name = "lastname"></div><br><br>
+                    <div class="blockg">Название товара <span style="color: red; font-size: 10px;">*</span>: <input class="vf" type = "text" name = "lastname"></div><br><br>
+                    <div class="blockg">Размер <span style="color: red; font-size: 10px;">*</span>: <input class="vf" type = "text" name = "lastname"></div><br><br>
+                    <div class="blockg">Город проживания <span style="color: red; font-size: 10px;">*</span>: <input class="vf" type = "text" name = "lastname"></div><br><br>
+                    <div class="blockg">Страна проживания <span style="color: red; font-size: 10px;">*</span>: <input class="vf" type = "text" name = "lastname"></div><br><br>
+                    <div class="blockg">Прочая информация: <textarea name="pole" style="float: right;  width: 50%; border: 1px solid rgb(167, 167, 167);" cols="50" rows="3"></textarea></div><br><br><br><br><br><br><br>
+                    <div class="blockg">Код безопасности <span style="color: red; font-size: 10px;">*</span>: <input style="margin-top: 5px; margin-left: 32%; height: 4%; width: 18%; border: 1px solid rgb(167, 167, 167);" type = "text" name = "lastname">   
+                        <img align="right" src="формав.png" style="height: 8%; width: 20%; float: right;  margin-right: 0%"></div><br><br>
+                    <div class="blockg"><center><button style="background: linear-gradient(rgb(207, 216, 237), rgb(168, 238, 251)); width: 25%; height: 5%; font-size: 10; border-radius: 2px; margin-top: 20px; border: 1px solid rgb(75, 75, 75);">Отправить сообщение</button></center>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

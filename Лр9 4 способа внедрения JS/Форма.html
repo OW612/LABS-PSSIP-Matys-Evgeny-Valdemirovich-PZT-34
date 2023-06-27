@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <style>
+        .container{
+            margin-left: auto;
+            margin-right: auto;
+            background-color: rgb(168, 232, 251);
+            margin-left: auto; 
+            margin-right: auto; 
+            padding: 10px 10px 10px 10px;
+            width: 95%;
+            height: 92%;
+            
+            display: grid;
+            grid-template-rows: auto;
+            grid-template-columns: 100%;
+            grid-template-areas: "block"
+                                "block"
+                                "block"
+                                "block"
+                                "block"
+                                "block"
+                                "block"
+                                "block"
+                                "block"
+                                "block"
+        }
+
+        .block{
+            grid-area: block;
+        }
+        
+        .vf{
+            width:360px; 
+            height: 25px; 
+            border: 1px solid rgb(167, 167, 167); 
+            float: right;
+        }
+    </style>
+    <title>Пользовательская форма</title>
+    <body>
+        <script type="text/javascript">
+            var x = 5;
+            var y = x + 3;
+            alert("1 способ");
+        </script>
+        <div style="width: 600px; height: 95%; margin-left: auto; margin-right: auto; background-color: rgb(168, 238, 251); padding: 5px 5px 5px 5px; border: 1px solid rgb(24, 163, 201);;">
+            <font style="color: blue; font-size: 14px; font-family: Arial; margin-left: 10px;"><b>Форма заказа товара</b></font>
+            <button type="button" style="background-color: rgb(24, 163, 201); border-radius: 1px; border: 1px solid grey; margin-left: 410px;">x</button><br>
+            <div class="container" style="border: 1px solid rgb(24, 163, 201);">
+                <form style="color: rgb(0, 0, 0); font-size: 12px; font-family: Arial;">
+                    <div class="block">ФИО <span style="color: red;">*</span>:<input class="vf" type = "text" name = "firstname"></div><br><br>
+                    <div class="block">E-mail отправителя <span style="color: red;">*</span>: <input class="vf" type = "text" name = "lastname"></div><br><br>
+                    <div class="block">Мобильный телефон <span style="color: red;">*</span>: <input class="vf" type = "text" name = "lastname"></div><br><br>
+                    <div class="block">Название товара <span style="color: red;">*</span>: <input class="vf" type = "text" name = "lastname"></div><br><br>
+                    <div class="block">Размер <span style="color: red;">*</span>: <input class="vf" type = "text" name = "lastname"></div><br><br>
+                    <div class="block">Город проживания <span style="color: red;">*</span>: <input class="vf" type = "text" name = "lastname"></div><br><br>
+                    <div class="block">Страна проживания <span style="color: red;">*</span>: <input class="vf" type = "text" name = "lastname"></div><br><br>
+                    <div class="block">Прочая информация: <textarea name="pole" style="margin-left: 87px; width:360px; border: 1px solid rgb(167, 167, 167);" cols="50" rows="5"></textarea></div><br><br>
+                    <div class="block">Код безопасности <span style="color: red;">*</span>: <input style="margin-left: 95px; height: 30px; border: 1px solid rgb(167, 167, 167);" type = "text" name = "lastname">   
+                        <img src="формав.png" style="height: 20px; width: 140px;"></div><br><br>
+                    <div class="block"><center><button style="background-color: rgb(100, 197, 249); width: 150px; height: 25px; font-size: 12; color: rgb(132, 132, 132); border-radius: 1px;">Отправить сообщение</button></center>
+                    <button onclick="alert('3 способ')" style="width: 100px; height: 40px;">3 способ</button>
+                    <script type="text/javascript" src="dfr.js"></script>
+                    <a href="JavaScript: alert('4 способ');">
+                        4 способ</a>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

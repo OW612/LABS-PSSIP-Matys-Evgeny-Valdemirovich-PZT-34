@@ -1,0 +1,146 @@
+<html>
+    <style>
+    @media (min-width: 841px) {
+        .container{
+        margin-left: auto;
+        margin-right: auto;
+        background-color: white;
+        width: 67%;
+        height: 100%;
+        display: grid;
+        grid-template-rows: 15% 45% 15% 25%;
+        grid-template-columns: 10% 42% 42% 6%;
+        grid-template-areas: "pic picB inf close"
+        "pic picB inf1 close"
+        "pic picB inf2 close"
+        "pic picB inf3 close"
+        }
+    }
+
+    @media (min-width: 700px) and (max-width: 840px) {
+        .container{
+            margin-left: auto;
+            margin-right: auto;
+            background-color: white;
+            width: 100%;
+            height: 100%;
+            display: grid;
+            grid-template-rows: 15% 45% 15% 25%;
+            grid-template-columns: 52% 42% 6%;
+            grid-template-areas: "picB inf close"
+            "picB inf1 close"
+            "picB inf2 close"
+            "picB inf3 close"
+        }
+        .pic{
+            display: none;
+        }
+    }
+
+        @media (min-width: 320px) and (max-width: 699px) {
+            .container{
+            margin-left: auto;
+            margin-right: auto;
+            background-color: white;
+            width: 100%;
+            height: 200%;
+            display: grid;
+            grid-template-rows: 40% 15% 15% 15% 15%;
+            grid-template-columns: 40% 40% 20%;
+            grid-template-areas: "picB picB close"
+            "inf inf inf"
+            "inf1 inf1 inf1"
+            "inf2 inf2 inf2"
+            "inf3 inf3 inf3"
+        }
+        .pic{
+            display: none;
+        }
+    }
+
+
+
+    .pic{
+        grid-area: pic;
+        padding: 2px 2px 2px 2px;
+    }
+    .picB{
+        grid-area: picB;
+        padding: 2px 2px 2px 2px;
+    }
+    .inf{
+        grid-area: inf;
+        padding: 5px 5px 5px 5px;
+        border-left: 1px solid rgb(196, 196, 196);
+    }
+    .inf1{
+        grid-area: inf1;
+        padding: 5px 5px 5px 5px;
+        border-left: 1px solid rgb(196, 196, 196);
+    }
+    .inf2{
+        grid-area: inf2;
+        padding: 5px 5px 5px 5px;
+        border-left: 1px solid rgb(196, 196, 196);
+    }
+    .inf3{
+        grid-area: inf3;
+        padding: 5px 5px 5px 5px;
+        border-left: 1px solid rgb(196, 196, 196);
+    }
+    .close{
+        grid-area: close;
+    }
+
+    IMG{
+        width: 90px;
+        height: 110px;
+    }
+    BUTTON{
+        width: 48%;
+        height: 30px;
+    }
+    SPAN{
+        font-family: arial;
+    }
+    SELECT{
+        width: 60px;
+        height: 40px;
+        color: grey;
+    }
+    </style>
+    <body style="background-color: grey;">
+        <div class="container">
+            <div class="pic"><br><img style="border: 1px solid rgb(196, 196, 196);" src="1.webp"><br><br><img style="border: 1px solid rgb(196, 196, 196);" src="2.webp"><br><br><img style="border: 1px solid rgb(196, 196, 196);" src="3.webp"></div>
+            <div class="picB"><br><img style="width: 100%; height: 40%; margin-top: 40%;" src="0.jpg"></div>
+            <div class="inf"><br><br>
+                <span style="font-size: 24px;">Nike Flex Run 2014 MSL</span><br>
+                <span style="color: grey; font-size: 12px;">MENS RUNNING SHOE</span><br></div>
+            <div class="inf1">
+                <button style="width: 100px; height: 30px; background-color: white; border: 0px;"><span>OVERVIEW</span></button>
+                <button style="width: 100px; height: 30px; background-color: white; border: 0px;"><span>FEATURES</span></button>
+                <button style="width: 100px; height: 30px; background-color: white; border: 0px;"><span>SPECS</span></button><hr color="blue">
+                <span style="color: grey;">Nascetur suspendisse massa auctor tempus</span></div>
+            <div class="inf2">
+                <span style="color: grey;">Size</span><span style="color: grey; margin-left: 10%;">Qty</span><br>
+                <select>
+                    <option value="1">42</option>
+                    <option value="2">43</option>
+                    <option value="3">44</option>
+                    <option value="4">45</option>
+                </select>
+                <select>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select><br><hr color="grey"></div>
+            <div class="inf3"><span style="font-size: 30px;">349zl</span><br><br>
+                <button style="background-color: rgb(249, 41, 41); color: white;"><span>Add to cart</span></button>
+                <button><span>Save to Wish List</span></button></div>
+            <div class="close">
+                <button style="color: grey; font-size: 20px; background-color: rgb(42, 42, 42); width: 100%; height: 55px;"><span>X</span></button>
+            </div>
+        </div>
+    </body>
+</html>

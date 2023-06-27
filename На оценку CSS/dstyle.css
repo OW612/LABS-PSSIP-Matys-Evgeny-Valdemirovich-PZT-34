@@ -1,0 +1,9 @@
+a:hover{
+    color: green;
+    text-decoration: none;
+}
+
+a:focus{
+    text-decoration: none;
+    color: yellow;
+}
