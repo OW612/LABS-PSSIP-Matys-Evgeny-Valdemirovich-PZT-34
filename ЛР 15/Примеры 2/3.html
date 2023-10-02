@@ -1,0 +1,50 @@
+<html>
+    <head>
+    <style type='text/css'>
+        #par1
+        {
+        color:black;
+        cursor:pointer;
+        }
+    </style>
+    <script type='text/javascript' src="https://code.jquery.com/jquery-3.6.0.min.js">
+        function start(){
+            document.getElementById('par1').style.color='red';
+        }
+        function stop(){
+            document.getElementById('par1').style.color='black';
+        }
+        function green(){
+            document.getElementById('par11').style.color='green';
+        }
+        function red(){
+            document.getElementById('par2').style.color='red';
+        }
+        function black(){
+            document.getElementById('par11').style.color='black';
+            document.getElementById('par2').style.color='black';
+        }
+        function bord1(){
+            document.getElementById('par11').style.border='1px solid green';
+            document.getElementById('par2').style.border='1px solid green';
+        }
+        function bord2(){
+            document.getElementById('par11').style.border='1px solid red';
+            document.getElementById('par2').style.border='1px solid red';
+        }
+        window.onbeforeunload = function() {
+        return 'Some string';
+        }
+    </script>
+    </head>
+    <body onload="alert('Добро пожаловать в задание 1')">
+        <p id='par1' onmouseover='start()' onmouseout='stop()'>Наведите на меня курсор мыши.</p>
+        <p id="par11" onmouseover="black()">Текст 1</p>
+        <p id="par2" onmouseover="black()">Текст 2</p>
+        <br>
+        <button id="but1" onclick="green()">Кнопка 1</button>
+        <button id="but2" ondblclick="red()">Кнопка 2</button>
+        <button id="but3" ondblclick="bord1()">Кнопка 3</button>
+        <button id="but4" ondblclick="bord2()">Кнопка 4</button>
+    </body>
+</html>

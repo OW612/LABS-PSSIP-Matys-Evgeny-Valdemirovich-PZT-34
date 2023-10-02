@@ -1,0 +1,55 @@
+<html>
+    <style>
+        body * {
+          margin: 10px;
+          border: 1px solid blue;
+        }
+      </style>
+      
+    <script>
+        function countRabbits() {
+        for(let i=1; i<=3; i++) {
+        alert('Кролик номер ' + i);
+        }
+        }
+    </script>
+    <body onclick="alert(`сюда всплытие не дойдёт`)">
+        <input value="Нажми меня" onclick="alert('Клик!')" type="button"><!-- Пример 1 -->
+        <input type="button" onclick="countRabbits()" value="Считать кроликов!"><!-- Пример 2 -->
+        <input id="elem" type="button" value="Нажми меня!"><!-- Пример 3 -->
+        <button onclick="alert(this.innerHTML)">Нажми меня</button><!-- Пример 4 -->
+        <input id="elem1" type="button" value="Нажми меня"/><!-- Пример 5 -->
+        <br>
+        <input id="inputt" type="button" value="Нажми меня"><!-- Пример 6 -->
+    
+        <form onclick="alert('form')">FORM
+            <div onclick="alert('div')">DIV
+              <p onclick="alert('p')">P</p>
+            </div>
+          </form><!-- Пример 7 -->
+          <button onclick="event.stopPropagation()">Кликни меня</button><!-- Пример 8 -->
+    </body>
+    <script>
+        elem.onclick=function(){
+            alert('Спасибо');
+        }
+
+        function handler1(){
+            alert("Спасибо!");
+        }
+        function handler2(){
+            alert("Спасибо еще раз!");
+        }
+        elem1.onclick=() => alert("Привет");
+        elem1.addEventListener("click", handler1);
+        elem1.addEventListener("click", handler2);
+
+        function handler() {
+          alert( 'Спасибо!' );
+        }
+        inputt.addEventListener("click", handler);
+        inputt.removeEventListener("click", handler)
+
+
+    </script>
+</html>

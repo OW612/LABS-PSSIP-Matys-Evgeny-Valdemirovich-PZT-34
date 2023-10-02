@@ -1,0 +1,30 @@
+<html>
+<head>
+<style type='text/css'>
+#block {
+    height: 360px;
+    width: auto;
+    border: 2px dotted #f00;
+}
+p {
+    text-indent: 40px;
+    padding-left: 20px;
+}
+</style>
+<script type='text/javascript'>
+function dispMes(event)
+{
+document.getElementById('par').style.display='block';
+document.getElementById('resultx').innerHTML=event.clientX;
+document.getElementById('resulty').innerHTML=event.clientY;
+}
+</script>
+</head>
+<body onclick='dispMes(event)'>
+<div id='block'><p>Щелкните в любом месте правого окна редактора.</p>
+<p id='par' style='display:none;' >Щелчок мыши был произведен по координатам: 
+<b><span id='resultx'> </span></b> пикс. по горизонтали от левой границы окна и <br />
+<b><span id='resulty'> </span></b> пикс. по вертикали от верхней границы окна.</p>
+</div>
+</body>
+</html>
